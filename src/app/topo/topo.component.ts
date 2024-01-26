@@ -9,7 +9,9 @@ import { Component } from '@angular/core';
       <div class="center topo">
         <div class="center__direita">
           <img class="" src="/assets/logo.png" alt="logo">
-          <input id="buscaPrincipal" placeholder="O que deseja encontrar?" type="search" />
+          <span class="iconeBusca">
+            <input id="buscaPrincipal" class="buscador" placeholder="O que deseja encontrar?" type="search" />
+          </span>
         </div>
         <button id="loginButton">Login</button>
       </div>
