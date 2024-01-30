@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 * {
   margin: 0;
@@ -33,4 +33,19 @@ header {
 .center{
   width: 1136px;
 
+}
+.container{
+  display: flex;
+  justify-content: center;
+
+}
+
+.botaoazul{
+  padding: 16px;
+  border: 0;
+  background-color: #2A7AE4;
+  color: #FFF;
+  line-height: 19px;
+  font-size: 16px;
+  font-family: 'Raleway';
 }
