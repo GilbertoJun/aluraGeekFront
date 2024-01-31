@@ -8,12 +8,12 @@
     font-size: 16px;
     color: #2A7AE4;
 }
-.center.topo{
+.container.topo{
     display: flex;
     justify-content: space-between;
 }
 
-.topo .center__direita{
+.topo .container__direita{
     display: flex;
     align-items: center;
     gap: 30px;

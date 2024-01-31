@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   imports: [],
   template: `
     <header>
-      <div class="center topo">
-        <div class="center__direita">
+      <div class="container topo">
+        <div class="container__direita">
           <img class="" src="/assets/logo.png" alt="logo">
           <span class="iconeBusca">
             <input id="buscaPrincipal" class="buscador" placeholder="O que deseja encontrar?" type="search" />

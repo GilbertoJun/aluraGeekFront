@@ -30,11 +30,11 @@ header {
 
 }
 
-.center{
+.container{
   width: 1136px;
 
 }
-.container{
+.center{
   display: flex;
   justify-content: center;
 

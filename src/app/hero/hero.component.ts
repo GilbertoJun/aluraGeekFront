@@ -5,10 +5,10 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-    <div class="hero container">
-      <div class="center __content">
+    <div class="hero center">
+      <div class="container __content">
         <h1>Dezembro promocional</h1>
-        <h2>Produtos selecionados com 33% de desconto</h2>  
+        <h2>Produtos selecionados com 33% de desconto</h2>
         <button class="botaoazul">Ver Consoles</button>
       </div>
     </div>
