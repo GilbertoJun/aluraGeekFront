@@ -4,12 +4,14 @@ import { Produto } from '../produto';
 @Component({
   selector: 'app-card-produto',
   standalone: true,
-  imports: [],
   template: `
-    <p>
-      Teste
+    <div class="card-produto">
+      <img src="/assets/produto/{{produto.imageUrl}}">
+      <p>{{produto.name}}</p>
+      <p>{{produto.price}}</p>
+      <a href="">Ver produto</a>
 
-    </p>
+    </div>
   `,
   styleUrl: './card-produto.component.css'
 })

@@ -1,0 +1,15 @@
+.lista-produtos{
+  display: flex;
+  justify-content: start;
+  gap: 16px;
+}
+.secao-produtos{
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.secao-produtos .topo{
+  display: flex;
+  justify-content: space-between;
+}
