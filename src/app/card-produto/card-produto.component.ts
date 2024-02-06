@@ -7,9 +7,9 @@ import { Produto } from '../produto';
   template: `
     <div class="card-produto">
       <img src="/assets/produto/{{produto.imageUrl}}">
-      <p>{{produto.name}}</p>
-      <p>{{produto.price}}</p>
-      <a href="">Ver produto</a>
+      <p class="font-16">{{produto.name}}</p>
+      <p class="weight-700">R$ {{produto.price}},00</p>
+      <a href="" class="color-azul weight-700">Ver produto</a>
 
     </div>
   `,

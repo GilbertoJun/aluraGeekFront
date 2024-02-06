@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
   template: `
     <section class="secao-produtos">
       <div class="topo">
-        <label>Star Wars</label><a>Ver tudo</a>
+        <label class="weight-700">Star Wars</label><a class="weight-700 color-azul"><span>Ver tudo</span> <img src="/assets/seta.png"></a>
       </div>
       <div class="lista-produtos">
         <app-card-produto *ngFor="let item of listaDeProdutos" [produto]="item"></app-card-produto>

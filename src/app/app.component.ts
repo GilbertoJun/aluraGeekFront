@@ -5,12 +5,12 @@ import { SecaoProdutosComponent } from './secao-produtos/secao-produtos.componen
 import { CardProdutoComponent } from './card-produto/card-produto.component';
 import { Produto } from './produto';
 import { CommonModule } from '@angular/common'
-import { NgModule } from '@angular/core';
+import { RodapeComponent } from './rodape/rodape.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [TopoComponent, HeroComponent, SecaoProdutosComponent, CommonModule],
+  imports: [TopoComponent, HeroComponent, SecaoProdutosComponent, CommonModule, RodapeComponent],
   template: `
     <app-topo></app-topo>
     <app-hero></app-hero>
@@ -22,6 +22,7 @@ import { NgModule } from '@angular/core';
 
       </div>
     </div>
+    <app-rodape></app-rodape>
     `,
   styleUrls: ['./app.component.css'],
 })

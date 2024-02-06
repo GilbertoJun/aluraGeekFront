@@ -1,0 +1,10 @@
+.card-produto {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+a {
+  text-decoration: none;
+}
+
