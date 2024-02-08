@@ -8,15 +8,27 @@ import { Component } from '@angular/core';
    <footer class="center">
       <div class="formularo-rodape center">
         <div class="container">
-          <img src="/assets/logo.png">
-          <ul>
-            <li><a>Quem somos nós</a></li>
-            <li><a>Política de privacidade</a></li>
-            <li><a>Programa fidelidade</a></li>
-            <li><a>Nossas lojas</a></li>
-            <li><a>Quero ser franqueado</a></li>
-            <li><a>Anuncie aqui</a></li>
-          </ul>
+          <div>
+            <img src="/assets/logo.png">
+          </div>
+
+          <nav>
+            <ul class="list-style-none text-decoration-none d-flex flex-collumn">
+              <li><a href="#">Quem somos nós</a></li>
+              <li><a href="#">Política de privacidade</a></li>
+              <li><a href="#">Programa fidelidade</a></li>
+              <li><a href="#">Nossas lojas</a></li>
+              <li><a href="#">Quero ser franqueado</a></li>
+              <li><a href="#">Anuncie aqui</a></li>
+            </ul>
+          </nav>
+
+          <form id="formContato" class="d-flex flex-collumn form">
+            Fale conosco
+            <input name="" type="text" placeholder="Nathan é bocó" />
+            <textarea name="" id="" cols="30" rows="10" placeholder="Escreva sua mensagem"></textarea>
+            <button type="submit" class="botaoazul">Enviar mensagem</button>
+          </form>
         </div>
       </div>
       <div class=""></div>

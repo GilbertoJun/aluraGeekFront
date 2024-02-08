@@ -2,4 +2,45 @@
   background-color: #EAF2FD;
   height: 368px;
   width: 100%;
+  margin-top: 60px;
+}
+
+.formularo-rodape > .container {
+  display:flex; padding: 64px 0;
+}
+
+.formularo-rodape .container > * {
+  flex-grow: 1;
+}
+
+.formularo-rodape nav, .formularo-rodape form{
+  display: flex;
+  text-decoration: none;
+}
+.formularo-rodape nav ul{
+  gap:24px;
+}
+
+.formularo-rodape #formContato textarea{
+  width: 100% !important;
+  height: 82px !important;
+}
+
+.form input, .form textarea{
+  margin: 8px 0;
+  border: solid 1px #c8c8c8;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  box-sizing: border-box;
+}
+.form input{
+  height: 56px;
+}
+.form textarea{
+  padding: 12px;
+}
+
+.formularo-rodape form button[type=submit]{
+  align-self: flex-start;
 }

@@ -7,12 +7,16 @@
 }
 
 .font-16 { font-size: 16px; }
-
 .font-24 { font-size: 24px; }
-
 .weight-700 { font-weight: 700; }
-
 .color-azul{ color: #2A7AE4; }
+.list-style-none{ list-style: none;}
+.text-decoration-none a{ text-decoration: none; color: unset;}
+.d-flex{ display: flex;}
+.flex-collumn{ flex-direction: column;}
+.justify-content-center{ justify-content: center;}
+
+
 
 body {
   font-family: 'Raleway', sans-serif;
