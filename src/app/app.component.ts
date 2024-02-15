@@ -27,7 +27,7 @@ import { RodapeComponent } from './rodape/rodape.component';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'aluraGeek';
+  title = 'AluraGeek';
 
 
 

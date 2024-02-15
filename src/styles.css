@@ -1,15 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
 }
 
+.font-12 { font-size: 12px; }
 .font-16 { font-size: 16px; }
 .font-24 { font-size: 24px; }
+.weight-500 { font-weight: 500; }
 .weight-700 { font-weight: 700; }
 .color-azul{ color: #2A7AE4; }
+.color-464646{ color: #464646; }
 .list-style-none{ list-style: none;}
 .text-decoration-none a{ text-decoration: none; color: unset;}
 .d-flex{ display: flex;}
@@ -44,13 +47,11 @@ header {
 
 .container{
   width: 1136px;
-
 }
 
 .center{
   display: flex;
   justify-content: center;
-
 }
 
 .botaoazul{

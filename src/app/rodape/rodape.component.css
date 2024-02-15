@@ -26,7 +26,7 @@
   height: 82px !important;
 }
 
-.form input, .form textarea{
+.form input, .form textarea, div.input{
   margin: 8px 0;
   border: solid 1px #c8c8c8;
   border-top: 0;
@@ -39,8 +39,49 @@
 }
 .form textarea{
   padding: 12px;
+  font-family: 'Raleway', sans-serif;
+  outline: none;
+  resize: none;
+}
+
+.form textarea::placeholder {
+  color: #A2A2A2;
 }
 
 .formularo-rodape form button[type=submit]{
   align-self: flex-start;
+}
+
+div.input {
+  background-color: #FFF;
+  padding: 8px 12px;
+  box-sizing: border-box;
+}
+
+div.input input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: unset;
+  width: 100%;
+  outline: none;
+  line-height: 20px;
+}
+
+div.input label {
+  color: #A2A2A2;
+  line-height: 16px;
+  margin-bottom: 4px;
+}
+
+footer{
+  flex-direction: column;
+}
+
+footer div.rodape{
+  flex-direction: column;
+  width: 100%;
+  height: 102px;
+  justify-content: center;
+  align-items: center;
 }
