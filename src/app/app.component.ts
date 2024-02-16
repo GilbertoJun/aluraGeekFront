@@ -6,24 +6,30 @@ import { CardProdutoComponent } from './card-produto/card-produto.component';
 import { Produto } from './produto';
 import { CommonModule } from '@angular/common'
 import { RodapeComponent } from './rodape/rodape.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [TopoComponent, HeroComponent, SecaoProdutosComponent, CommonModule, RodapeComponent],
+  imports: [TopoComponent, HeroComponent, SecaoProdutosComponent, CommonModule, RodapeComponent, RouterModule],
   template: `
     <app-topo></app-topo>
-    <app-hero></app-hero>
-    <div class="center">
-      <div class="container">
-        <app-secao-produtos></app-secao-produtos>
-        <app-secao-produtos></app-secao-produtos>
-        <app-secao-produtos></app-secao-produtos>
-
-      </div>
-    </div>
+    <router-outlet></router-outlet>
     <app-rodape></app-rodape>
     `,
+    // template: `
+    // <app-topo></app-topo>
+    // <app-hero></app-hero>
+    // <div class="center">
+    //   <div class="container">
+    //     <app-secao-produtos></app-secao-produtos>
+    //     <app-secao-produtos></app-secao-produtos>
+    //     <app-secao-produtos></app-secao-produtos>
+
+    //   </div>
+    // </div>
+    // <app-rodape></app-rodape>
+    // `,
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {

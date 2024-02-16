@@ -1,16 +1,18 @@
-import { Component, Input } from '@angular/core';
+import { ProdutoService } from './../services/produto.service';
+import { Produto } from './../produto';
+import { Component, Input, Inject, inject } from '@angular/core';
 import { CardProdutoComponent } from '../card-produto/card-produto.component';
-import { Produto } from '../produto';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-secao-produtos',
   standalone: true,
-  imports: [CardProdutoComponent, CommonModule],
+  imports: [CardProdutoComponent, CommonModule, RouterModule],
   template: `
     <section class="secao-produtos">
       <div class="topo">
-        <label class="weight-700">Star Wars</label><a class="weight-700 color-azul"><span>Ver tudo</span> <img src="/assets/seta.png"></a>
+        <label class="weight-700">Star Wars</label><a class="weight-700 color-azul" [routerLink]="['/nathanbaitola']"><span>Ver tudo</span> <img src="/assets/seta.png"></a>
       </div>
       <div class="lista-produtos">
         <app-card-produto *ngFor="let item of listaDeProdutos" [produto]="item"></app-card-produto>
@@ -22,48 +24,13 @@ import { CommonModule } from '@angular/common';
 export class SecaoProdutosComponent {
   @Input() cardProduto!: CardProdutoComponent;
 
-  listaDeProdutos: Produto[] = [
-    {
-      id: 1,
-      idCategory: 1,
-      imageUrl: 'unsplash_6FDXGY9J6y4.png',
-      name: 'Produto 1',
-      price: 60,
-    },
-    {
-      id: 2,
-      idCategory: 2,
-      imageUrl: 'unsplash_epRFE_hBNjo.png',
-      name: 'Produto 2',
-      price: 60,
-    },
-    {
-      id: 1,
-      idCategory: 1,
-      imageUrl: 'unsplash_6FDXGY9J6y4.png',
-      name: 'Produto 1',
-      price: 60,
-    },
-    {
-      id: 2,
-      idCategory: 2,
-      imageUrl: 'unsplash_epRFE_hBNjo.png',
-      name: 'Produto 2',
-      price: 60,
-    },
-    {
-      id: 1,
-      idCategory: 1,
-      imageUrl: 'unsplash_6FDXGY9J6y4.png',
-      name: 'Produto 1',
-      price: 60,
-    },
-    {
-      id: 2,
-      idCategory: 2,
-      imageUrl: 'unsplash_epRFE_hBNjo.png',
-      name: 'Produto 2',
-      price: 60,
-    }
-  ];
+  listaDeProdutos : Produto[] = [];
+  produtoService: ProdutoService = inject(ProdutoService);
+
+  constructor() {
+    this.listaDeProdutos = this.produtoService.getListaDeProdutos();
+    console.log(this.listaDeProdutos);
+  }
+
+
 }
