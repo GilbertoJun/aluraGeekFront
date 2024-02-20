@@ -15,7 +15,7 @@ import { RouterModule } from '@angular/router';
         <label class="weight-700">Star Wars</label><a class="weight-700 color-azul" [routerLink]="['/nathanbaitola']"><span>Ver tudo</span> <img src="/assets/seta.png"></a>
       </div>
       <div class="lista-produtos">
-        <app-card-produto *ngFor="let item of listaDeProdutos" [produto]="item"></app-card-produto>
+        <app-card-produto *ngFor="let item of listaDeProdutos | slice:0:6" [produto]="item"></app-card-produto>
       </div>
     </section>
   `,
@@ -28,8 +28,11 @@ export class SecaoProdutosComponent {
   produtoService: ProdutoService = inject(ProdutoService);
 
   constructor() {
-    this.listaDeProdutos = this.produtoService.getListaDeProdutos();
-    console.log(this.listaDeProdutos);
+    this.produtoService.getListaDeProdutos().then((listadeProdutos: Produto[]) => {
+      this.listaDeProdutos = listadeProdutos;
+    });
+    // this.listaDeProdutos = this.produtoService.getListaDeProdutos();
+    // console.log(this.listaDeProdutos);
   }
 
 

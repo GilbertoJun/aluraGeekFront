@@ -17,19 +17,6 @@ import { RouterModule } from '@angular/router';
     <router-outlet></router-outlet>
     <app-rodape></app-rodape>
     `,
-    // template: `
-    // <app-topo></app-topo>
-    // <app-hero></app-hero>
-    // <div class="center">
-    //   <div class="container">
-    //     <app-secao-produtos></app-secao-produtos>
-    //     <app-secao-produtos></app-secao-produtos>
-    //     <app-secao-produtos></app-secao-produtos>
-
-    //   </div>
-    // </div>
-    // <app-rodape></app-rodape>
-    // `,
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
