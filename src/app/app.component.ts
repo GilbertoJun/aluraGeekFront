@@ -3,7 +3,7 @@ import { TopoComponent } from './topo/topo.component';
 import { HeroComponent } from './hero/hero.component';
 import { SecaoProdutosComponent } from './secao-produtos/secao-produtos.component';
 import { CardProdutoComponent } from './card-produto/card-produto.component';
-import { Produto } from './produto';
+import { Produto } from './interfaces/produto';
 import { CommonModule } from '@angular/common'
 import { RodapeComponent } from './rodape/rodape.component';
 import { RouterModule } from '@angular/router';

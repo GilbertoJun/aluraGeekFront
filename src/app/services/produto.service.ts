@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Produto } from '../produto';
+import { Produto } from '../interfaces/produto';
 
 @Injectable({
   providedIn: 'root'
@@ -11,6 +11,12 @@ export class ProdutoService {
 
   async getListaDeProdutos(): Promise<Produto[]> {
     const data = await fetch(this.url);
+    return await data.json() ?? [];
+  }
+
+  async getListaDeProdutosByCategory(category: number): Promise<Produto[]> {
+
+    const data = await fetch(`http://localhost:8080/categoria/${category}/produtos/1`);
     return await data.json() ?? [];
   }
 
