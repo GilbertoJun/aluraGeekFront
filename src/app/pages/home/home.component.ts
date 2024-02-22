@@ -1,8 +1,8 @@
 import { Component, inject } from '@angular/core';
-import { HeroComponent } from '../hero/hero.component';
-import { SecaoProdutosComponent } from '../secao-produtos/secao-produtos.component';
-import { Categoria } from '../interfaces/categoria';
-import { CategoriaService } from '../services/categoria.service';
+import { HeroComponent } from '../../hero/hero.component';
+import { SecaoProdutosComponent } from '../../secao-produtos/secao-produtos.component';
+import { Categoria } from '../../interfaces/categoria';
+import { CategoriaService } from '../../services/categoria.service';
 import { CommonModule } from '@angular/common';
 
 @Component({
