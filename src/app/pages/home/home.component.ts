@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
-import { HeroComponent } from '../../hero/hero.component';
-import { SecaoProdutosComponent } from '../../secao-produtos/secao-produtos.component';
+import { HeroComponent } from '../../componentes/hero/hero.component';
+import { SecaoProdutosComponent } from '../../componentes/secao-produtos/secao-produtos.component';
 import { Categoria } from '../../interfaces/categoria';
 import { CategoriaService } from '../../services/categoria.service';
 import { CommonModule } from '@angular/common';
@@ -11,10 +11,9 @@ import { CommonModule } from '@angular/common';
   imports: [HeroComponent, SecaoProdutosComponent, CommonModule],
   template: `
     <app-hero></app-hero>
-    <div class="center">
-    <div class="container">
-         <app-secao-produtos *ngFor="let item of listadeCategorias" [categoria]="item"></app-secao-produtos>
-
+    <div class="center bg-gray">
+      <div class="container">
+        <app-secao-produtos *ngFor="let item of listadeCategorias" [categoria]="item"></app-secao-produtos>
        </div>
      </div>
   `,

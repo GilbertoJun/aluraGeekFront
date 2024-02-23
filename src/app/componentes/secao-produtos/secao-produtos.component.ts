@@ -1,10 +1,10 @@
-import { ProdutoService } from './../services/produto.service';
-import { Produto } from '../interfaces/produto';
+import { ProdutoService } from '../../services/produto.service';
+import { Produto } from '../../interfaces/produto';
 import { Component, Input, Inject, inject } from '@angular/core';
 import { CardProdutoComponent } from '../card-produto/card-produto.component';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { Categoria } from '../interfaces/categoria';
+import { Categoria } from '../../interfaces/categoria';
 
 @Component({
   selector: 'app-secao-produtos',

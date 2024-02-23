@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { DetailsComponent } from './details/details.component';
+import { DetailsComponent } from './componentes/details/details.component';
 import { HomeComponent } from './pages/home/home.component';
-import { CardProdutoComponent } from './card-produto/card-produto.component';
+import { CardProdutoComponent } from './componentes/card-produto/card-produto.component';
 import { CategoriaComponent } from './pages/categoria/categoria.component';
 
 const routeConfig: Routes = [

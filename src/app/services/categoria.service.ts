@@ -14,4 +14,9 @@ export class CategoriaService {
     return await data.json() ?? [];
   }
 
+  async getDetalhesCategoria(idCategoria: number): Promise<Categoria> {
+    const data = await fetch('http://localhost:8080/categoria/' + idCategoria);
+    return await data.json() ?? {};
+  }
+
 }

@@ -11,6 +11,6 @@ a {
 .imagem-produto {
   width: 174px;
   height: 176px;
-  background-size: 174px;
+  background-size: cover;
   background-position: center;
 }

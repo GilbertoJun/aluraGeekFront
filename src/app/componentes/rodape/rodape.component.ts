@@ -13,7 +13,7 @@ import { Component } from '@angular/core';
           </div>
 
           <nav>
-            <ul class="list-style-none text-decoration-none d-flex flex-collumn weight-500">
+            <ul class="list-style-none text-decoration-none d-flex flex-column weight-500">
               <li><a href="#">Quem somos nós</a></li>
               <li><a href="#">Política de privacidade</a></li>
               <li><a href="#">Programa fidelidade</a></li>
@@ -23,7 +23,7 @@ import { Component } from '@angular/core';
             </ul>
           </nav>
 
-          <form id="formContato" class="d-flex flex-collumn form">
+          <form id="formContato" class="d-flex flex-column form">
             <label class="weight-700">Fale conosco</label>
             <div class="input">
               <label class="weight-400 font-12">Nome</label>
