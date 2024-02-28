@@ -13,8 +13,8 @@ import { CategoriaService } from '../../services/categoria.service';
   standalone: true,
   imports: [CardProdutoComponent, CommonModule, SecaoProdutosComponent],
   template: `
-    <div class="center d-flex bg-gray">
-      <div class="container d-flex flex-column gap-30 mt-20 ">
+    <div class="center d-flex bg-gray principal">
+      <div class="container d-flex flex-column gap-30">
         <h1>{{categoria.categoryName}}</h1>
         <div class="lista-produtos">
           <app-card-produto *ngFor="let item of listaDeProdutos" [produto]="item"></app-card-produto>

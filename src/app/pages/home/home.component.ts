@@ -11,8 +11,8 @@ import { CommonModule } from '@angular/common';
   imports: [HeroComponent, SecaoProdutosComponent, CommonModule],
   template: `
     <app-hero></app-hero>
-    <div class="center bg-gray">
-      <div class="container">
+    <div class="center bg-gray principal">
+      <div class="container grupo-secoes">
         <app-secao-produtos *ngFor="let item of listadeCategorias" [categoria]="item"></app-secao-produtos>
        </div>
      </div>

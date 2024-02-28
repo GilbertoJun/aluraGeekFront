@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-   <footer class="center">
+   <footer class="center pt-0">
       <div class="formularo-rodape center">
         <div class="container">
           <div>

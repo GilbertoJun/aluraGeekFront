@@ -25,6 +25,9 @@
 .gap-50{ gap:50px;}
 .mt-20{ margin-top: 20px;}
 .bg-gray{background-color: #f5f5f5;}
+.pt-0 { padding-top: 0 !important; }
+.center.principal { padding: 64px 0;}
+.grupo-secoes { gap: 64px; display: flex; flex-direction: column; }
 
 
 
