@@ -20,6 +20,11 @@ export class ProdutoService {
     return await data.json() ?? [];
   }
 
+  async getProductById(productId: number) : Promise<Produto>{
+
+    const data = await fetch(`http://localhost:8080/produto/${productId}`);
+    return await data.json() ?? [];
+  }
   listaDeProdutos: Produto[] = [];
 
   // listaDeProdutos: Produto[] = [

@@ -4,6 +4,26 @@
   gap: 8px;
 }
 
+.card-produto .content{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-produto.large .content{
+  justify-content: center;
+}
+.card-produto.large .product-name{
+  font-size: 52px;
+  font-weight: 500;
+  color: #464646;
+}
+
+
+.card-produto.large {
+  flex-direction: row;
+}
+
 a {
   text-decoration: none;
 }
@@ -13,4 +33,9 @@ a {
   height: 176px;
   background-size: cover;
   background-position: center;
+}
+
+.large .imagem-produto {
+  width: 560px;
+  height: 403px;
 }
