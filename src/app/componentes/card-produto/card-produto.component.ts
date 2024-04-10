@@ -15,7 +15,7 @@ import { CommonModule } from '@angular/common';
         <p class="weight-700">R$ {{produto.price}},00</p>
         <a [routerLink]="['/produto/' + produto.id]" class="color-azul weight-700 {{large ? 'd-none' : ''}}">Ver produto</a>
         <p *ngIf="large">
-          Description of product
+          {{produto.description}}
         </p>
 
       </div>

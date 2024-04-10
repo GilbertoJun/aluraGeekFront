@@ -13,7 +13,7 @@ import { Categoria } from '../../interfaces/categoria';
   template: `
     <section class="secao-produtos">
       <div class="topo">
-        <label class="weight-700">{{categoria.categoryName}}</label><a class="weight-700 color-azul" [routerLink]="['/categoria/' + categoria.id]"><span>Ver tudo</span> <img src="/assets/seta.png"></a>
+        <label class="weight-700">{{produtosSimilares ? "Produtos Similares" : categoria.categoryName}}</label><a class="weight-700 color-azul" [routerLink]="['/categoria/' + categoria.id]" *ngIf="!produtosSimilares"><span>Ver tudo</span> <img src="/assets/seta.png"></a>
       </div>
       <div class="lista-produtos">
         <app-card-produto *ngFor="let item of listaDeProdutos | slice:0:6" [produto]="item"></app-card-produto>
@@ -24,6 +24,7 @@ import { Categoria } from '../../interfaces/categoria';
 })
 export class SecaoProdutosComponent {
   @Input() categoria !: Categoria ;
+  @Input() produtosSimilares !: Boolean ;
 
   listaDeProdutos : Produto[] = [];
   produtoService: ProdutoService = inject(ProdutoService);
@@ -42,6 +43,7 @@ export class SecaoProdutosComponent {
     this.produtoService.getListaDeProdutosByCategory(this.categoria.id).then((resposta: any) => {
       console.log(this.listaDeProdutos)
       console.log(resposta)
+      console.log("Qualquer string")
       this.listaDeProdutos = resposta.produtos;
 
     });
